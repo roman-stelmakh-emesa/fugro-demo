@@ -16,7 +16,7 @@ def lambda_handler(event, context):
         output_text = input_data['text']
         
         for word in replacements.keys():
-            output_text = re.sub(word, replacements[word], output_text, flags=re.IGNORECASE)
+            output_text = re.sub(rf"\b{word}\b", replacements[word], output_text, flags=re.IGNORECASE)
         
         output_data = { 'text': output_text }
         
