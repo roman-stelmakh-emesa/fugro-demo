@@ -10,8 +10,6 @@ provider "aws" {
   region  = "eu-central-1"
   profile = "default"
 
-
-
   default_tags {
     tags = {
       "owner"       = "Roman Stelmakh"
