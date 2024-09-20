@@ -12,7 +12,7 @@ $ make apply
 $ curl -L -v -X POST \
     -H "Content-Type: application/json" \
     -d '{"text":"Okay google, find out about Fugro in Holland."}' \
-    https://<API_GATEWAY_URL>/api/replace/
+    https://ra0l33q4qe.execute-api.eu-central-1.amazonaws.com/api/replace/
 ```
 
 ## Uninstall
